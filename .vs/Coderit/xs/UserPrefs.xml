@@ -1,0 +1,14 @@
+﻿<Properties StartupConfiguration="{797315CA-8DBA-C4DF-E724-B0ACCA26F591}|">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="de74d8aa-28d4-4155-a234-50df5a96f23d" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/death.cs">
+    <Files>
+      <File FileName="Assets/Scripts/death.cs" Line="22" Column="29" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

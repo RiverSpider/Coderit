@@ -1,19 +1,32 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections;
+using UnityEngine;
+using UnityEngine.UI;
+using Game;
 
 public class CollisionHandler : MonoBehaviour
 {
-    public GameObject textObject; 
+    public Text textObject;
+    public RobotController otherScript;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (collision.gameObject.CompareTag("Player") && collision.gameObject.CompareTag("Finish"))
+        if (other.CompareTag("Player"))
         {
-            Debug.Log("победа");
-            textObject.transform.position = Vector3.zero;
-
-            textObject.GetComponent<TextMesh>().color = Color.red;
-
-            textObject.transform.SetAsLastSibling();
+            GameOver();
         }
     }
+
+    private void GameOver()
+    {
+        Debug.Log("победа");
+        OnCollisionEnter();
+        textObject.rectTransform.position = new Vector3(1400, 477, -1);
+    }
+    
+    private void OnCollisionEnter()
+    {      
+        otherScript.enabled = false;
+    }
+    
 }
