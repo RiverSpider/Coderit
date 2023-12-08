@@ -50,3 +50,6 @@ TagManager:
   - name: 'game '
     uniqueID: 4221634795
     locked: 0
+  - name: tip
+    uniqueID: 4151120709
+    locked: 0

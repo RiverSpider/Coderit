@@ -8,6 +8,7 @@ public class CollisionHandler : MonoBehaviour
 {
     public Text textObject;
     public RobotController otherScript;
+    public GameObject tip;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -22,6 +23,7 @@ public class CollisionHandler : MonoBehaviour
         Debug.Log("победа");
         OnCollisionEnter();
         textObject.rectTransform.position = new Vector3(1400, 477, -1);
+        tip.SetActive(!tip.activeSelf);
     }
     
     private void OnCollisionEnter()
